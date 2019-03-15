@@ -64,8 +64,11 @@ it should output something similar to this
 `Run 'helm init' to configure helm.`
 
 Before we run `helm init` lets setup the RBAC .
+
 Run `kubectl create -f rbac-config.yaml` this will create a service account for us to use with Tiller
+
 We can now run `helm init --service-account tiller --history-max 200`
+
 To confirm Tiller was installed and initialised you can run `kubectl get pods --namespace kube-system`
 
 ### Database Cluster setup
