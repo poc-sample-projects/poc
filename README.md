@@ -135,13 +135,21 @@ To scale the WordPress install by 2 just run `kubectl scale deployment wordpress
 After that you should see the two new replicas being added. the output should be similar to this:
 `# kubectl get pods`
 `NAME                         READY   STATUS    RESTARTS   AGE`
+
 `wordpress-7b5b4c7877-5kqqq   1/1     Running   0          55s`
+
 `wordpress-7b5b4c7877-ccs9g   1/1     Running   0          55s`
+
 `wordpress-7b5b4c7877-cl4j8   1/1     Running   0          9s`
+
 `wordpress-7b5b4c7877-m5h6g   1/1     Running   0          55s`
+
 `wordpress-7b5b4c7877-zwb4l   1/1     Running   0          9s`
+
 `wp-db-cluster-pxc-0          2/2     Running   0          22h`
+
 `wp-db-cluster-pxc-1          2/2     Running   0          22h`
+
 `wp-db-cluster-pxc-2          2/2     Running   0          22h`
 
 To downscale it by two is the same as before `kubectl scale deployment wordpress --replicas=3` this will bring it back to 3 pods.
