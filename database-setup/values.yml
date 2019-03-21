@@ -8,14 +8,14 @@ image:
 replicas: 3
 ## Specify password for root user
 ##
-mysqlRootPassword: p455w0rd1r00t
+mysqlRootPassword: 
 ## Specify password for xtradb backup user
 ##
-xtraBackupPassword: p455w0rdr3pl1c4
+xtraBackupPassword:
 ## Uncomment to create a database user
 ##
 mysqlUser: wpuser
-mysqlPassword: us3rp455w0rd 
+mysqlPassword: 
 ## Allow unauthenticated access, uncomment to enable
 ##
 # mysqlAllowEmptyPassword: true
